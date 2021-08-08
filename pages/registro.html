@@ -1,4 +1,3 @@
-<!--Proyecto hecho por Minnely Sindro, año 2020-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,16 +8,17 @@
     <link rel="stylesheet" href="../css/stylecss.css">
 </head>
 
-<!--Sección de encabezado-->
 <header class="grid_header">
-    <!-- Imagen logotipo -->
+    <!-- LOGO y Titulo-->
   <div id="contenidoheader">
 
    <img src="../images/logo2.jpg" width="100" height="100">
   </div> 
   <nav class="barranavegacion">
-   <!-- Barra de paginas-->
+
    <h1> EL MUNDO DEL GATO S.A </h1>
+
+<!-- Navegador -->
    <table class="default" align="center" border="3" width="80%" height="80px">
       <ul class="navegar">
        <td>   <a href="../index.html"> <h3> HOME </h3>  </a> </td>
@@ -27,7 +27,6 @@
        <td>   <a href="../pages/login.html"> <h3>LOGIN </h3></a>  </td>
       </ul>
     </table>
-
    </nav>
   </header>
 
@@ -39,11 +38,12 @@
         <main class="grid_main">
             <br> <br>
             <h3> REGISTRO COMPRADORES</h3>
-            <!--Formulario para registro de datos-->
+
+            <!-- Formulario Registro-->
             <form action="" method="">
                 <br> <legend> No omitir ningún campo al llenar su información.</legend>
                 <br> <div>
-                    <!--Sección para nombres-->
+             
                     <label for="idNombre">Primer Nombre *</label>
                     <input type="text" id="idNombre1"
                            name="txtNombre"
@@ -55,7 +55,7 @@
                            name="txtNombre"
                            placeholder="Ingrese segundo nombre">
                 </div>
-                <!--Sección para apellidos-->
+
                 <br><div>
         <br>   <label for="idNombre">Primer Apellido *</label>
                     <input type="text" id="idApellido1"
@@ -70,32 +70,24 @@
                 </div><br>
                 <div>
 
-                    <!--Sección para fecha de nacimiento-->
                     <label for="date">Fecha nacimiento</label>
                     <input type="date" name="fechanac" id="fechanac">
                 </div>
                 <br><div>
-                    <!--Sección para escoger e ingresar documento de identificación-->
+                    
                     <label for="idIdentificacion">Documento de identificacion *</label>
                     <select name="doctoidentificacion" id="doctoidentificacion">
                         <option value="dpi">DPI</option>
                         <option value="pasaporte">Pasaporte</option>
                     </select>
+
                     <input type="number"
                            name="txtIdentificacion"
                            id="idIdentificacion"
                            required
                            placeholder="ingrese solo numeros">
                 </div>
-                <!--Sección para ingresar NIT; esto servirá para la compra-->
-                <br><div>
-                    <label for="idIdentificacion">NIT</label>
-                    <input type="txt"
-                           name="txtIdentificacion"
-                           id="idIdentificacion"
-                           placeholder="Ingrese NIT sin guion">
-                </div>
-                <!--Sección para ingresar dirección-->
+
                 <br><div>
                     <label for="idDireccion">Direccion *</label>
                     <input type="text"
@@ -104,17 +96,17 @@
                            id="idDireccion"
                            placeholder="Direccion domiciliar">
                 </div>
-                <!--Sección para correo electronico-->
+
+
                 <br><div>
                     <label for="idEmail">Email *</label>
                     <input type="email" name="txtmail" id="idmail" placeholder="Ingrese correo">
-                    <!--Sección para contraseña-->
+
         <br>   <br> <label for="idContrasenia">Contraseña *</label>
                     <input type="text" name="txtcontrasenia" id="contrasenia" placeholder="Ingrese contraseña valida">
                 </div> <br>
-                <!--Sección para indicar que los campos son obligatorios-->
-                <label for="leyenda">* Obligatorio</label>
 
+                        <!-- Botón de registro,no deja guardar sin campos obligatorios -->
                 <button type="submit" class="boton">Registrarme</button>
                 <br><br><label for="text">¿Ya tienes cuenta? <a href="../pages/login.html">Iniciar sesión</a></label>
 
@@ -126,11 +118,8 @@
 
     </div>
 
-    <!--Firma de la página-->
-    <ul class="contacto">
 
-
-
+    <ul>
         <address>Dania Catro - 1590-15-15081</address>
     </ul>
 

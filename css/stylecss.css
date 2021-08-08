@@ -1,3 +1,5 @@
+/* Importe fuentes */
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 @import url(https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float);
@@ -6,23 +8,24 @@
 
 @import url(https://fonts.googleapis.com/css?family=canvas-print);
 
+/*Media Querys - Responsivo */
 @media screen and (max-width: 100%) {
     .grid_data {
         grid-template-columns: 1fr;
     }
 }
 
+/* DISEÑO TEXTO*/
+
 a{
   text-align: center;
 }
-
 
 h1{
   font-family:"Rancho", sans-serif;
   color:darkblue;
   text-align: center;
 }
-
 
 h3{
   font-family:"shadow-multiple", sans-serif;
@@ -36,19 +39,20 @@ ul{
 
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-}
-
 h4{
   font-family:"canvas";
   text-align: center;
   text-shadow:black;
 }
 
+/* Diseño Clases*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
 
 .login-page {
   width: 360px;
@@ -138,14 +142,12 @@ h4{
 .container .info span .fa {
   color: #EF3B3A;
 }
+
+
+/*Diseño Paginas*/
 body {
   background-image: url("https://data.1freewallpapers.com/detail/cat-minimalism-vector-wire.jpg");
   background-repeat: repeat;
-  /*background: #d7eeba;  fallback for old browsers 
-  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-  background: -moz-linear-gradient(right, #76b852, #8DC26F);
-  background: -o-linear-gradient(right, #76b852, #8DC26F);
-  background: linear-gradient(to left, #76b852, #8DC26F);*/ 
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
