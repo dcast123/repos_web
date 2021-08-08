@@ -6,29 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
        
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../css/stylecss.css">
 </head>
 
 <!--Sección de encabezado-->
 <header class="grid_header">
     <!-- Imagen logotipo -->
   <div id="contenidoheader">
-   <img src="https://img.icons8.com/pastel-glyph/2x/cat--v3.png" class="rabano"/>
+
+   <img src="../images/logo2.jpg" width="100" height="100">
   </div> 
   <nav class="barranavegacion">
    <!-- Barra de paginas-->
+   <h1> EL MUNDO DEL GATO S.A </h1>
+   <table class="default" align="center" border="3" width="80%" height="80px">
       <ul class="navegar">
-          <a href="../pages/login.html">HOME --- </a>
-          <a target="_blank" href="../pages/atributos.html">PRODUCTOS --- </a>
-          <a target="_blank" href="../pages/elementos.html">SUCURSALES --- </a>
-          <a href="../pages/registro.html">REGISTRO</a>
+       <td>   <a href="../index.html"> <h3> HOME </h3>  </a> </td>
+       <td>   <a target="_blank" href="../pages/atributos.html"> <h3>PRODUCTOS </h3> </a> </td>
+       <td>   <a target="_blank" href="../pages/elementos.html"> <h3>MAS COMPRADO </h3> </a> </td>
+       <td>   <a href="../pages/login.html"> <h3>LOGIN </h3></a>  </td>
       </ul>
+    </table>
+
    </nav>
   </header>
 
-<body style="        background-image: url(https://img5.goodfon.com/wallpaper/nbig/d/18/chernaia-koshka-seryi-fon-ten.jpg);">
-
-  
+<body>
     <!--Sección de registro de usuario-->
     <div class="registrodatos">
 
@@ -47,20 +50,20 @@
                            required
                            placeholder="Ingrese primer nombre">
 
-                    <label for="idNombre">Segundo Nombre</label>
+         <br> <br>  <label for="idNombre">Segundo Nombre</label>
                     <input type="text" id="idNombre2"
                            name="txtNombre"
                            placeholder="Ingrese segundo nombre">
                 </div>
                 <!--Sección para apellidos-->
                 <br><div>
-                    <label for="idNombre">Primer Apellido *</label>
+        <br>   <label for="idNombre">Primer Apellido *</label>
                     <input type="text" id="idApellido1"
                            name="txtNombre"
                            required
                            placeholder="Ingrse Primer apellido">
 
-                    <label for="idNombre">Segundo Apellido</label>
+        <br> <br>   <label for="idNombre">Segundo Apellido</label>
                     <input type="text" id="idApellido2"
                            name="txtNombre"
                            placeholder="Ingrese segundo apellido">
@@ -106,7 +109,7 @@
                     <label for="idEmail">Email *</label>
                     <input type="email" name="txtmail" id="idmail" placeholder="Ingrese correo">
                     <!--Sección para contraseña-->
-                    <label for="idContrasenia">Contraseña *</label>
+        <br>   <br> <label for="idContrasenia">Contraseña *</label>
                     <input type="text" name="txtcontrasenia" id="contrasenia" placeholder="Ingrese contraseña valida">
                 </div> <br>
                 <!--Sección para indicar que los campos son obligatorios-->
@@ -127,7 +130,7 @@
     <ul class="contacto">
 
 
-        <h1> EL MUNDO DEL GATO S.A </h1>
+
         <address>Dania Catro - 1590-15-15081</address>
     </ul>
 
