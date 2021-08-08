@@ -1,0 +1,136 @@
+<!--Proyecto hecho por Minnely Sindro, año 2020-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+       
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<!--Sección de encabezado-->
+<header class="grid_header">
+    <!-- Imagen logotipo -->
+  <div id="contenidoheader">
+   <img src="https://img.icons8.com/pastel-glyph/2x/cat--v3.png" class="rabano"/>
+  </div> 
+  <nav class="barranavegacion">
+   <!-- Barra de paginas-->
+      <ul class="navegar">
+          <a href="../pages/login.html">HOME --- </a>
+          <a target="_blank" href="../pages/atributos.html">PRODUCTOS --- </a>
+          <a target="_blank" href="../pages/elementos.html">SUCURSALES --- </a>
+          <a href="../pages/registro.html">REGISTRO</a>
+      </ul>
+   </nav>
+  </header>
+
+<body style="        background-image: url(https://img5.goodfon.com/wallpaper/nbig/d/18/chernaia-koshka-seryi-fon-ten.jpg);">
+
+  
+    <!--Sección de registro de usuario-->
+    <div class="registrodatos">
+
+        <!--main de registro-->
+        <main class="grid_main">
+            <br> <br>
+            <h3> REGISTRO COMPRADORES</h3>
+            <!--Formulario para registro de datos-->
+            <form action="" method="">
+                <br> <legend> No omitir ningún campo al llenar su información.</legend>
+                <br> <div>
+                    <!--Sección para nombres-->
+                    <label for="idNombre">Primer Nombre *</label>
+                    <input type="text" id="idNombre1"
+                           name="txtNombre"
+                           required
+                           placeholder="Ingrese primer nombre">
+
+                    <label for="idNombre">Segundo Nombre</label>
+                    <input type="text" id="idNombre2"
+                           name="txtNombre"
+                           placeholder="Ingrese segundo nombre">
+                </div>
+                <!--Sección para apellidos-->
+                <br><div>
+                    <label for="idNombre">Primer Apellido *</label>
+                    <input type="text" id="idApellido1"
+                           name="txtNombre"
+                           required
+                           placeholder="Ingrse Primer apellido">
+
+                    <label for="idNombre">Segundo Apellido</label>
+                    <input type="text" id="idApellido2"
+                           name="txtNombre"
+                           placeholder="Ingrese segundo apellido">
+                </div><br>
+                <div>
+
+                    <!--Sección para fecha de nacimiento-->
+                    <label for="date">Fecha nacimiento</label>
+                    <input type="date" name="fechanac" id="fechanac">
+                </div>
+                <br><div>
+                    <!--Sección para escoger e ingresar documento de identificación-->
+                    <label for="idIdentificacion">Documento de identificacion *</label>
+                    <select name="doctoidentificacion" id="doctoidentificacion">
+                        <option value="dpi">DPI</option>
+                        <option value="pasaporte">Pasaporte</option>
+                    </select>
+                    <input type="number"
+                           name="txtIdentificacion"
+                           id="idIdentificacion"
+                           required
+                           placeholder="ingrese solo numeros">
+                </div>
+                <!--Sección para ingresar NIT; esto servirá para la compra-->
+                <br><div>
+                    <label for="idIdentificacion">NIT</label>
+                    <input type="txt"
+                           name="txtIdentificacion"
+                           id="idIdentificacion"
+                           placeholder="Ingrese NIT sin guion">
+                </div>
+                <!--Sección para ingresar dirección-->
+                <br><div>
+                    <label for="idDireccion">Direccion *</label>
+                    <input type="text"
+                           name="txtDireccion"
+                           required
+                           id="idDireccion"
+                           placeholder="Direccion domiciliar">
+                </div>
+                <!--Sección para correo electronico-->
+                <br><div>
+                    <label for="idEmail">Email *</label>
+                    <input type="email" name="txtmail" id="idmail" placeholder="Ingrese correo">
+                    <!--Sección para contraseña-->
+                    <label for="idContrasenia">Contraseña *</label>
+                    <input type="text" name="txtcontrasenia" id="contrasenia" placeholder="Ingrese contraseña valida">
+                </div> <br>
+                <!--Sección para indicar que los campos son obligatorios-->
+                <label for="leyenda">* Obligatorio</label>
+
+                <button type="submit" class="boton">Registrarme</button>
+                <br><br><label for="text">¿Ya tienes cuenta? <a href="../pages/login.html">Iniciar sesión</a></label>
+
+            </form>
+
+        </main>
+        <footer>
+        </footer>
+
+    </div>
+
+    <!--Firma de la página-->
+    <ul class="contacto">
+
+
+        <h1> EL MUNDO DEL GATO S.A </h1>
+        <address>Dania Catro - 1590-15-15081</address>
+    </ul>
+
+    </form>
+</body>
+</html>
