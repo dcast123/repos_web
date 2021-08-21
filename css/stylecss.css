@@ -30,7 +30,7 @@ h1{
 h3{
   font-family:"shadow-multiple", sans-serif;
   text-align: center;
-  text-shadow:black;
+  color:black;
 }
 
 ul{
@@ -42,7 +42,7 @@ ul{
 h4{
   font-family:"canvas";
   text-align: center;
-  text-shadow:black;
+  color:black;
 }
 
 /* Diseño Clases*/

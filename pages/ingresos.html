@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/stylecss.css">
+
+</head>
+
+<body>
+
+    <h1 id="titulo" class="text-center">Nuestros Productos</h1>
+    <!-- Navegador -->
+    <table class="default" align="center" border="1" width="40%" height="2px">
+        <ul class="navegar">
+         <td>  <a href="../index.html">                  <h3>  INICIO </h3> </a> </td>
+         <td>  <a  target="_blank" href="carrito.html">  <h3> CARRITO </h3> </a>  </td>
+         <td>  <a  target="_blank" href="ingresos.html"> <h3> CATALOGO </h3> </a> </td> 
+       </ul>
+       </table>
+
+    <header class="header">
+        <h1 class="text-center">Catálogo de Productos</h1>
+        <img src="../images/logo.jpg" alt="Imagen" id="img" width="100" height="100">
+    </header>
+    <div class="container">
+        <form >
+            <br>
+            <label for="idCodigo"> <h3> Código </h3></label>
+            <input type="number" class="form-control" id="idCodigo" name="txtCodigo">
+            <br>
+            <label for="idNombre"> <h3> Nombre </h3></label>
+            <input type="text" class="form-control" id="idNombre" name="txtNombre">
+            
+            <br>
+            <label for="idPrecio"> <h3> Precio </h3></label>
+            <input type="number" class="form-control" id="idPrecio" name="txtPrecio">
+            <br>
+            <label for="idImagen"><h3> Imagen </h3></label>
+            <input type="file" class="InsertImg" id="idImagen" name="txtImagen" onchange="previewFile()">
+            <img src="" alt="Imagen Previa" id="idImagenPrevia">
+            
+            <br>
+            <input type="button" value="Guardar" class="btn btn-success"  onclick="addProducto()">
+            <br>
+            <br>
+            <table class="table table-bordered table-striped" id="tabla">
+                <thead style="color: white;">
+                    <tr>
+                        <th><h3> Codigo </h3></th>
+                        <th><h3> Nombre </h3></th>
+                        <th><h3> Precio </h3></th>
+                        <th><h3> Imagen </h3></th>
+                    </tr>
+                </thead>
+
+                <tbody id="idTableBody">
+                   
+                </tbody>
+            </table>
+
+        </form>
+           
+    </div>
+   
+    <script src="../js/catalogo.js"></script>
+    <script> 
+    cargarDatos();
+    LlenarTablaP()
+    
+    </script>
+
+</body>
+
+</html>

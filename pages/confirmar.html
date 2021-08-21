@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Pedido</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/stylecss.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="titulo" class="text-center">Confirmando su pedido</h1>
+        
+    </header>
+    <div class="container">
+        <form >
+            <div>
+              <label for="idCodigo"> <h4>NIT: </h4></label>
+              <input type="text" class="form-control" id="idNIT" name="txtNIT">
+        
+              <label for="idPrecio"><h4>Nombre:</h4></label>
+              <input type="text" class="form-control" id="idnombre" name="txtnombre">
+           
+              <label for="idImagen"><h4>Dirección de entrega: </h4></label>
+              <input type="text" class="form-control" id="idDireccion" name="txtDireccion">
+            
+            </div>
+            
+            <table class="table table-bordered table-striped" class="ctable">
+                <br>
+                <thead style="color: white;">
+                    <tr>
+                        <th><h3> Código   </h3></th>
+                        <th><h3> Producto </h3></th>
+                        <th><h3> Cantidad </h3></th>
+                        <th><h3> Precio   </h3></th>
+                        <th><h3> Total    </h3></th>
+                    </tr>
+                </thead>
+
+                <tbody class="tbody" id="idBodyTable3">
+                    
+                    
+
+                </tbody>
+                
+                
+            </table>
+            <div  > 
+                <p>
+                    <label id="TotalPedido"></label> 
+                    
+                </p>
+         
+
+              <button onclick="boton1">
+                CONFIRMAR PEDIDO
+              </button>
+                <script>
+                  alert ("Campos Vacíos")
+                  </script>
+            </div>
+
+        </form>      
+    </div>
+ 
+
+    <script src="../js/catalogo.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script>
+        cargarDatosCarrito();
+        LlenarCarrito();
+    </script>
+
+</body>
+
+</html>
