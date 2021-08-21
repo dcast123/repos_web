@@ -17,6 +17,8 @@
 
 /* DISEÑO TEXTO*/
 
+
+
 a{
   text-align: center;
 }
@@ -44,6 +46,31 @@ h4{
   text-align: center;
   color:black;
 }
+
+h5 {
+  display: inline-block;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+  position: relative;
+  text-align: center;
+  font-size: 100px;
+}
+
+h5:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, red, yellow);
+  mix-blend-mode: screen; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 100px;
+}
+
 
 /* Diseño Clases*/
 
